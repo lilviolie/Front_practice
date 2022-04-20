@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daylog Sign Up</title>
+    <link rel="stylesheet" href="../../styles/join.css">
+</head>
+<body>
+    <form class="join">
+        <h1 class="join__title">Daylog</h1>
+        <div class="join__name">
+            <input type="text" class="join__input" placeholder="  Name">
+            <div class="join__error-empty">You can't leave this empty.</div>
+        </div>
+        <div class="join__id">
+            <input type="password" class="join__input" placeholder="  Id">
+            <div class="join__error-empty">You can't leave this empty.</div>
+            <div class="join__error">This id is already taken.</div>
+        </div>
+        <div class="join__password">
+            <input type="text" class="join__input" placeholder="  Password">
+            <div class="join__error-empty">You can't leave this empty.</div>
+        </div>
+        <div class="join__confirm">
+            <input type="text" class="join__input" placeholder="  Password Confirm">
+            <div class="join__error-empty">You can't leave this empty.</div>
+            <div class="join__error">This password don't match.</div>
+        </div>
+        <button class="join__button" type="sumbit">SIGN UP</button>
+        <a class="join__link" id="linkLogin">Already have an account?</a>
+    </form>
+    <script src="../../scripts/joinValidation.js"></script>
+</body>
+</html>
