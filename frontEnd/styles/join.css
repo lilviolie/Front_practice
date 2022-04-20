@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'font1';
+    src: url(../fonts/MaruBuri-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url(../fonts/Roustel.otf) format('opentype');
+}
+
+* {
+    font-family: 'font1';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.join {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.join__title {
+    font-family: 'font2';
+    font-weight: lighter;
+    font-size: 60px;
+    margin-bottom: 13px;
+}
+
+.join__input {
+    width: 220px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(122, 122, 122);
+    outline: none;
+}
+
+.error .join__input {
+    border-bottom: 1px solid #C83E3E;
+}
+
+.join__button {
+    margin-top: 23px;
+    width: 220px;
+    height: 30px;
+    background: rgb(235, 233, 233);
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.join__button:hover {
+    background: rgb(230, 230, 230);
+}
+
+.join__link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+.join__link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.join__error-empty {
+    text-align: left;
+    color: #C83E3E;
+    margin-top: 5px;
+    margin-left: 7px;
+    font-size: 13px;
+    display: none;
+}
+
+.error .join__error-empty {
+    display: block;
+}
+
+.join__error {
+    text-align: left;
+    color: #C83E3E;
+    margin-top: 5px;
+    margin-left: 7px;
+    font-size: 13px;
+    display: none;
+}
+
+.error .join__error {
+    display: block;
+}
